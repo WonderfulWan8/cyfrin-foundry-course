@@ -61,6 +61,30 @@
 * **定义**: 一个去中心化的预言机网络，提供可靠的链上和链下数据连接。
 * **前端类比**: 类似于前端的 API Gateway，提供统一的接口来访问各种数据源。
 * **使用场景**: 在 DeFi 协议中获取价格数据，或在 NFT 市场中验证资产真实性。
+
+### EVM (Ethereum Virtual Machine)
+* **定义**: 以太坊虚拟机，是智能合约的运行环境。
+* **前端类比**: 类似于浏览器的 JavaScript 引擎，但它执行的是智能合约代码 (Bytecode)。
+* **代码思维**: 前端的 React/Vue 对应智能合约的 Solidity。
+* **价值**: 跨平台兼容性，任何支持 EVM 的区块链都能运行相同的智能合约代码。
+
+### EVM equivalent Chains (EVM 兼容链)
+* **定义**: 支持 EVM 的区块链网络，如 Binance Smart Chain、 Polygon、Avalanche 等。
+* **前端类比**: 类似于不同浏览器（Chrome、Firefox、Safari）都能运行相同的 JavaScript 代码。
+* **价值**: 开发者可以轻松地将智能合约从以太坊迁移到其他 EVM 兼容链，扩大用户基础和应用场景。
+
+### EVM Non-equivalent Chains (非 EVM 兼容链)
+* **定义**: 不支持 EVM 的区块链网络，如 Solana、Cardano、Polkadot 等。
+* **前端类比**: 类似于不同编程语言（JavaScript、Python、Ruby）有不同的运行时环境和语法。
+* **挑战**: 开发者需要学习新的编程语言和工具链，增加了开发难度和成本。
+* **价值**: 提供了不同的设计理念和技术创新，推动区块链生态的发展。
+
+### EVM Compatibility Layer (EVM 兼容层)
+* **定义**: 允许非 EVM 兼容链运行 EVM 智能合约的技术层。
+* **前端类比**: 类似于跨平台框架（如 React Native、Flutter），允许开发者使用相同的代码库在不同平台上运行应用。
+* **价值**: 降低了开发成本，促进了跨链互操作性。
+
+  
 ---
 
 ## 业务场景 (Use Cases - 来自课程 Lesson 4)
