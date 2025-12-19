@@ -27,3 +27,29 @@
 
 明天继续死磕 Web3。👊
 *Section 1 Completed. Next: Solidity Basics. 这里的规则，由代码定义。*
+
+# Day 1: Getting "Soft-locked" by Gas Fees ⛽
+
+My task today was simple: Try out ETH liquid staking. Instead, I learned a hard lesson about EVM chains.
+
+🚨 The Deadlock:
+
+Goal: Transfer USDT from wallet to CEX to buy ETH.
+
+Error: Transaction failed. I had the asset ($10 USDT), but 0 BNB for gas.
+
+The Paradox: I couldn't move the USDT because I couldn't pay the $0.002 fee. I was rich in assets but poor in gas. 🤷‍♂️
+
+💡 The Fix: Found $0.82 of "dust" left on a CEX exchange.
+
+✅ Converted dust to BNB.
+
+✅ Sent to wallet to unfreeze the chain.
+
+✅ Swapped for ETH -> Staking complete.
+
+Key Takeaway: In Web3, "No Gas = No Service." It’s a decentralized law of physics.
+
+Theory ✅ | Practice ✅ | Mistakes ✅ Next Stop: Solidity Basics. 👊
+
+[https://github.com/WonderfulWan8]
