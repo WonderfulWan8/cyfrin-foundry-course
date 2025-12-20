@@ -94,3 +94,37 @@ Today I learned (the hard way) that Web3 development is 90% debugging my own ass
 
 **Status:**
 Environments set. Lessons learned. Now deploying `SimpleStorage.sol`. 🚀
+
+Day 3 转型 Web3：从“脚本小子”到“全栈工程师”的硬核一日。🛠️
+
+今天不只是写代码，而是把吃饭的家伙（环境+网络+安全）全部重构了一遍。
+
+1️⃣ 环境攻坚 (The Setup) 告别 Remix 舒适区，本地部署 Foundry。 🛑 阻碍：GFW 拦截，终端 curl 443 端口连接失败；forge 路径找不到；项目结构混乱导致 Is a directory 报错。 🛡️ 破局：手动下载二进制包 -> 配置 https_proxy -> 重写 .zshenv -> 规范 src/script 目录分离。 ✅ 结果：本地成功部署 SimpleStorage 合约，绿色的 Script ran successfully 是最好的奖赏。
+
+2️⃣ 基建掌控 (Infrastructure) 为了极致的网络权限，折腾了一台 OpenWrt (Kwrt) 软路由。 🔌 操作：解决 IP 冲突 (10.0.0.1)，配置混合加密 Wi-Fi。 💡 感悟：无论是智能合约还是路由器，核心都是拿回 Root 权限。
+
+3️⃣ 安全实战 (Security Ops) 调研了一个“钱包激活”资金盘。 🕵️ 鉴别：正经 DApp 用签名 (Sign)，骗子才让你手动转账 (Transfer 0.001 BNB)。 ⚠️ 教训：前端 UI 是骗人的，链上逻辑才是诚实的。
+
+4️⃣ 理论内化 (The Theory)
+
+车与引擎：区块链结构 (Hash Chain) 是车身，共识 (PoW/PoS) 是引擎。
+
+数学验证：验证签名 = 不泄露私钥证明“我有钱”。
+
+🍲 结尾：一碗热干面慰劳自己。环境通了，网络稳了，路走宽了。
+
+Day 3 Transitioning to Web3: From Script Kiddie to Full-Stack Engineer. 🛠️
+
+Today wasn't just about code; it was about rebuilding the entire stack (Environment + Network + Security).
+
+1️⃣ Engineering Setup (Foundry) Left the Remix comfort zone to deploy Foundry locally. 🛑 Blocker: Network blocked by GFW (Port 443 failure); forge path issues; Is a directory errors due to poor structure. 🛡️ Fix: Manual binary install -> Configured https_proxy -> Patched .zshenv -> Refactored src/script separation. ✅ Result: Successfully deployed SimpleStorage locally. Seeing that green Script ran successfully was the ultimate reward.
+
+2️⃣ Infrastructure Control Configured an OpenWrt (Kwrt) router for total network authority. 🔌 Ops: Resolved IP conflicts (Subnet 10.0.0.1) and secured Wi-Fi. 💡 Insight: Whether it's smart contracts or hardware, it's all about owning Root Access.
+
+3️⃣ Security Research Investigated a "Wallet Activation" scam. 🕵️ Analysis: Legitimate DApps ask to Sign; Scams ask to Transfer (0.001 BNB). ⚠️ Lesson: The UI lies; only the on-chain logic tells the truth.
+
+4️⃣ Core Theory
+
+Car vs Engine: Blockchain structure (Hash Chain) is the car; Consensus (PoW/PoS) is the engine.
+
+Verification: Verifying signatures = Proving ownership without revealing the private key.
