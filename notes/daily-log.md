@@ -128,3 +128,34 @@ Today wasn't just about code; it was about rebuilding the entire stack (Environm
 Car vs Engine: Blockchain structure (Hash Chain) is the car; Consensus (PoW/PoS) is the engine.
 
 Verification: Verifying signatures = Proving ownership without revealing the private key.
+
+
+# Day 4: 硬件突围与基建主权，今天搞网络
+
+**今天的任务本该很简单：继续学习 Web3 知识。结果一顿操作猛如虎，直接把自己关进了物理层面的“小黑屋”：**
+
+### 🧨 遭遇死锁 (The Physical Deadlock)
+
+1. **起因**：想在 Web3 的世界里加速，却被电信光猫的“封闭模式”卡住了脖子。光猫默认路由模式导致 RAX3000M 沦为二级路由，无法通过 Kwrt 深度掌控分流策略。
+2. **死锁**：没有超级密码无法改桥接 -> 无法拨号 -> 无法获得干净的公网 IP 环境。
+3. **悖论**：我有 $500M$ 的带宽资源，却因为没有光猫的底层权限，连最基础的 GitHub 仓库都拉不动。
+
+就在我准备放弃的时候，决定利用 CeFi（闲鱼）的专业服务完成物理自救。
+
+### 💡 极限自救 (The Infrastructure Solution)
+
+> **核心逻辑：下放底层权限，重构网络拓扑。**
+
+* ✅ **咸鱼借力**：找人远程破解光猫，强制开启桥接模式。
+* ✅ **拨号夺权**：RAX3000M 成功承载 PPPoE 拨号，Kwrt 系统全面接管网络主权。
+* ✅ **激活代理**：配置 PassWall 节点订阅，成功拉取 25 个全球加密节点，Web3 通道正式通车。
+* ✅ **兼容性适配**：针对 2.4G 智能家居（小爱音箱）连接死锁，强行将带宽压低至 **20MHz** 并手动锁定信道 1，物理唤醒了处于“假死”状态的无线芯片。
+
+**Key Takeaway：虽然只是几小时的设备调试，但这种“不掌握物理底层就无法掌控应用层”的去中心化铁律，比任何书本记得都牢。没有 Gas 费寸步难行，没有底层的网关主权，Web3 就是空中楼阁。**
+
+---
+
+**理论** ✅ | **实践** ✅ | **踩坑** ✅
+
+明天开始，回归代码战场。👊
+***Section 1 Completed. Next: Solidity Basics. 这里的规则，由代码定义。***
