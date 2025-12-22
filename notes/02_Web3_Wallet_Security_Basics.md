@@ -16,3 +16,13 @@
 ## 3. 常见骗局 (Common Scams)
 * **Seaport 签名**: 看起来像乱码，其实是把你的 NFT 0元卖给黑客。
 * **Address Poisoning (地址投毒)**: 黑客生成一个和你常转账地址首尾相同的地址，诱导你复制粘贴错。
+
+# 名词解释
+## 热钱包 (Hot Wallet)
+* 用于日常交易的、随时可以访问的、有私钥的账户。
+## 冷钱包 (Cold Wallet)
+* 用于长期保存的、不经常访问的、没有私钥的账户。Your Keys, Your Crypto。
+## 硬件钱包 (Hardware Wallet)
+* 一种物理设备，用于存储私钥，提供额外的安全层。 如 Ledger、Trezor 等，提供额外的安全层。
+## 浏览器插件 (Browser Extension)
+* MetaMask 是一种浏览器插件，用于与以太坊网络交互。
