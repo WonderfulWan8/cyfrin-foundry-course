@@ -159,3 +159,72 @@ Verification: Verifying signatures = Proving ownership without revealing the pri
 
 明天开始，回归代码战场。👊
 ***Section 1 Completed. Next: Solidity Basics. 这里的规则，由代码定义。***
+
+
+# Day 5: “U盾”时代与自托管的艺术 🛡️
+
+今天的任务本该是建立“心理防火墙”。虽然因身体透支和网络故障被迫**强制关机**，但这一下午的概念密度极高。我不再只是一个用户，我正在学习如何成为一家银行。
+
+### 🔐 安全协议 (硬技能)
+
+1.  **托管真相 (Custody)**: 彻底搞懂了 **EOA** (MetaMask = 我的保险柜) 和 **CEX** (Kraken = 银行打的白条) 的区别。"Not your keys, not your coins."
+2.  **多签逻辑 (Multi-Sig)**: 掌握了 **"X-of-Y"** 签名机制。就像公司董事会——除非多数人同意，否则钱动不了。
+3.  **社交恢复 (Social Recovery)**: 学习了 **Shamir's Secret Sharing (SSS)**。那个把私钥切碎分给朋友的“撕碎藏宝图”算法。
+4.  **防御模式 (Defense)**: “别信前端网页，只信签名弹窗。” 蜜罐 (Honeypots) 和钓鱼攻击活在网页里，真相活在 Hex 数据里。
+
+### 🧠 心态与工作流 (软技能)
+
+> **💡 洞察:** Web3 目前正处于糟糕的**“U盾时代”**。这不仅是痛点，更是未来账户抽象 (Account Abstraction) 的巨大商业机会。
+
+* ✅ **重构知识库**: 将笔记拆分为 `01_Blockchain_Basics` 和 `02_Web3_Wallet_Security`，并引入了标准化的 Git 提交规范。
+* ✅ **情绪调节**: 在现实冲突 (Grab 外卖) 中克服了 **“杏仁核劫持”**。瞬间夺回理性控制权，没有被本能带着走。
+* ✅ **逆风输出**: 顶着严重的网络延迟，硬啃下了 80% 的安全模块。
+
+### ⛔ 致命阻碍 (The Blocker)
+
+* **障碍**: 代理节点极度不稳定，视频卡顿导致严重的精力耗损。
+* **代价**: 物理透支 (腰痛/脑涨)，被迫提前关机。
+* **修复**: 明早第一件事：**修复网络基础设施**。
+
+**Key Takeaway:** Web3 的安全不是自动的，是设计出来的。今天我学到：所谓的“不可阻挡”，意味着不依赖任何单点故障——无论是私钥，还是我自己的大脑。
+
+---
+
+**理论** ✅ | **实战** 🔄 | **踩坑** 🛑
+
+明天：修好网络，杀完安全课，开始写代码。 👊
+*Section 5 (Scalability) In Progress. Next: Transaction Verification.*
+
+# Day 5: The "U-Key" Era & The Art of Self-Custody 🛡️
+
+Today's mission was building the "mental firewall." Despite a forced shutdown due to physical exhaustion and network failures, the conceptual density was high. I am no longer just a user; I am learning to be the bank.
+
+### 🔐 The Security Protocol (Hard Skills)
+
+1.  **Custody Truths:** Mastered the distinction between **EOA** (MetaMask = My Vault) and **CEX** (Kraken = The Bank's IOU). "Not your keys, not your coins."
+2.  **Multi-Sig Logic:** Understood the **"X-of-Y"** signature scheme. It’s like a corporate board—money doesn't move unless the majority agrees.
+3.  **Social Recovery:** Learned **Shamir's Secret Sharing (SSS)**. The "Torn Treasure Map" algorithm that splits a private key into shards.
+4.  **Defense Mode:** "Don't trust the frontend, only trust the signer window." Honeypots and phishing attacks live on the website; the truth lives in the hex data.
+
+### 🧠 Mindset & Workflow (Soft Skills)
+
+> **Insight:** Web3 is currently in its "U-Key Era" (Terrible UX). This isn't a bug; it's a massive business opportunity for future Account Abstraction.
+
+* ✅ **Refactored Knowledge Base:** Split notes into `01_Blockchain_Basics` and `02_Web3_Wallet_Security` with standardized Git commits.
+* ✅ **Emotional Regulation:** Overcame an "Amygdala Hijack" during a real-world conflict (Grab delivery). Instantly regained rational control.
+* ✅ **Workflow:** Pushed through 80% of the security module despite severe network resistance.
+
+### ⛔ The Blocker (Network Failure)
+
+* **Obstacle:** Unstable proxy nodes caused severe video buffering and mental fatigue.
+* **Cost:** Physical exhaustion (back pain/headache) forced an early shutdown.
+* **Fix:** Infrastructure repair is the priority for tomorrow morning.
+
+**Key Takeaway:** Security in Web3 is not automatic; it is engineered. Today I learned that being "Unstoppable" means building a system that doesn't rely on a single point of failure—whether that's a private key or my own brain.
+
+---
+
+**Theory** ✅ | **Practice** 🔄 | **Pitfalls** 🛑
+
+Tomorrow: Fix the network, finish the security module, and start coding. 👊
+*Section 5 (Scalability) In Progress. Next: Transaction Verification.*
