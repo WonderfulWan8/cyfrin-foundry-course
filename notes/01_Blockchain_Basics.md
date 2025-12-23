@@ -242,6 +242,20 @@
 ### 🚨 关键区分：L2 vs Sidechain (侧链)
 * **L2 (Rollup)**: 如 Arbitrum, Optimism。**数据发回以太坊**，安全由以太坊保障。
 * **Sidechain**: 如 Polygon PoS, Gnosis。**有自己独立的验证节点**。如果侧链节点作恶，L1 救不了你。
+
+### L2 Maturity Stages (L2 成熟度分级) - by Vitalik
+* **Stage 0 (Full Training Wheels / 全辅助轮)**
+  * **现状**: 官方拥有绝对控制权（很多早期的 L2 都在这里）。
+  * **风险**: 既然是官方控制，那如果服务器宕机，或者官方想回滚交易，完全是他们说了算。
+  * **通俗理解**: 名为区块链，实为“腾讯云数据库”。
+* **Stage 1 (Limited Training Wheels / 半辅助轮)**
+  * **现状**: 哪怕官方作恶，用户也有机会通过“欺诈证明”来提款。
+  * **保留权限**: 官方保留了一个“紧急按钮” (Security Council)。
+  * **特点**: 平时按规则运行，但出大事了（比如合约有严重漏洞），官方依然有权插手干预。目前主流 L2 (Arbitrum/Optimism) 大多处于此阶段。
+* **Stage 2 (No Training Wheels / 无辅助轮)**
+  * **现状**: 完全去中心化。
+  * **原则**: **Code is Law (代码即法律)**。
+  * **终极目标**: 哪怕官方团队解散、丢了私钥，也无法干预网络运行。这才是真正的 Web3。
 ---
 
 ## 业务场景 (Use Cases - 来自课程 Lesson 4)
