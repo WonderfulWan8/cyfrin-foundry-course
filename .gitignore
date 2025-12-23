@@ -8,3 +8,4 @@ broadcast/
 
 # System
 .DS_Store
+lib/forge-std/
