@@ -44,3 +44,11 @@ Solidity 支持多种数据类型，以下是最常用的几种：
 * 关键字: `string`
 * 取值: UTF-8 编码的文本  
 
+## 3. 变量声明 (Variable Declaration)
+### 1. 状态变量 (State Variables)
+* 存储在区块链上，永久保存。
+* 关键字: `uint public myNumber;`
+### 2. 局部变量 (Local Variables)
+* 存储在函数内部，函数执行完毕后销毁。
+* 关键字: `uint myLocalNumber = 10;`
+注：变量默认不可变，使用 `constant` 或 `immutable` 关键字声明不可变变量。`internal` 关键字用于限制变量的访问范围，仅在合约内部和继承的合约中可见。
