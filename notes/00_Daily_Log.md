@@ -322,3 +322,68 @@ Summary: Originally planned as an "Active Recovery" day, but faced a "Black Swan
 ⚔️ Next Steps
 • Status: System Rebooted. Morale High.
 • Target: Deep dive into Solidity Functions & Memory/Storage.
+
+
+# 📅 Day 8: The Turnaround (逆转之日)
+
+**Date:** 2025-12-25
+**Status:** ✅ Mission Complete
+
+## 🇨🇳 中文版 (Chinese Version)
+
+### 1. 战略复盘 (Strategic Review)
+* **最大的教训**: 遭遇了典型的“低价值陷阱”。为了一块汽车电瓶的纠纷，消耗了 48 小时的情绪与精力。深刻意识到：**我的时间估值 > 维修溢价**。以后遇到此类问题，直接外包或止损，绝不恋战。
+* **心态韧性**: 在极度疲惫、甚至产生“报复性拖延”念头的情况下，强制启动工作流。证明了 **“行动先于动机” (Action precedes Motivation)** ——不是等状态好了才写代码，是写了代码状态才变好的。
+
+### 2. 技术资产 (Technical Assets)
+本日完成了 Solidity 基础中最核心的 **“存储与成本”** 模块：
+
+* **Gas 经济学 (Gas Economics)**:
+    * 彻底厘清 `view`/`pure` (免费) 与 `transaction` (付费) 的边界。
+    * 实证了 **Internal Calls (内部调用)** 的计费逻辑：在写操作中调用读函数，必须付费。
+    * **优化成果**: 通过删除冗余代码，单笔交易节省 **140 Gas**。
+
+* **EVM 内存模型 (Memory vs Storage)**:
+    * 解决了 `TypeError: Data location must be "memory"` 报错。
+    * 理解了 **Reference Types (引用类型)** 的处理逻辑：函数参数中的 String 必须声明为 `memory`，以避免昂贵的链上存储操作。
+
+* **数据结构 (Data Structures)**:
+    * **Struct**: 成功定义 `People` 结构体 (自定义类型)。
+    * **Array**: 创建并操作 `People[]` 数组，实现了数据的动态录入。
+    * **Interact**: 成功部署合约，并验证了数据的读写闭环。
+
+### 3. 明日目标 (Next Steps)
+* **问题**: 数组 (Array) 虽然好用，但在查找特定数据时效率极低（需要遍历）。
+* **下一步**: 攻克 **Mapping (映射)** —— Solidity 中的“哈希表”，实现 $O(1)$ 级别的快速查找。
+
+---
+
+## 🇺🇸 English Version
+
+### 1. Strategic Review
+* **The "Low-Value Trap"**: I wasted 48 hours of emotional energy and focus on a minor car battery dispute.
+    * **Key Realization**: My time valuation > The repair premium.
+    * **New Protocol**: For future low-value problems, I will immediately outsource or cut losses. I will not engage in battles that cost more than the potential victory.
+* **Mental Resilience**: I successfully overcame severe fatigue and the urge for "revenge procrastination" by forcing myself to start the workflow.
+    * **Validated Principle**: **Action precedes Motivation.** I proved that I don't need to wait for the "right state" to code; coding is what generates the right state.
+
+### 2. Technical Assets
+Completed the core **"Storage & Cost"** modules in Solidity.
+
+* **Gas Economics**:
+    * Clarified the boundary between `view`/`pure` (Free/Off-chain) and `transaction` (Paid/On-chain).
+    * **Empirical Evidence**: Verified the billing logic for Internal Calls—calling a read function inside a write function incurs Gas costs.
+    * **Optimization**: Saved **140 Gas** per transaction by performing dead code elimination.
+
+* **EVM Memory Model (Memory vs. Storage)**:
+    * Debugged and resolved the `TypeError: Data location must be "memory"`.
+    * Mastered **Reference Types**: Understood why string parameters must be declared as `memory` to avoid expensive (and incorrect) storage operations during function execution.
+
+* **Data Structures**:
+    * **Struct**: Successfully defined a custom `People` type.
+    * **Array**: Implemented dynamic data entry using a `People[]` array.
+    * **Interact**: Achieved a full loop: Deployed the contract and verified the read/write operations on-chain.
+
+### 3. Next Steps
+* **Problem**: Arrays are useful but inefficient for looking up specific data (requires iteration/looping).
+* **Goal**: Conquer **Mappings**—Solidity's version of hash tables—to achieve **$O(1)$** lookup speed.
