@@ -52,3 +52,16 @@ Solidity 支持多种数据类型，以下是最常用的几种：
 * 存储在函数内部，函数执行完毕后销毁。
 * 关键字: `uint myLocalNumber = 10;`
 注：变量默认不可变，使用 `constant` 或 `immutable` 关键字声明不可变变量。`internal` 关键字用于限制变量的访问范围，仅在合约内部和继承的合约中可见。
+
+## 4. 函数声明 (Function Declaration)
+* 关键字: `function <functionName>(<parameters>) public view returns (<returnType>) { ... }`
+### 1. 访问修饰符 (Visibility Modifiers)
+* `public`: 任何人都可以调用。
+* `private`: 只能在合约内部调用。
+* `internal`: 只能在合约内部和继承的合约中调用。
+* `external`: 只能通过合约外部调用。
+* `view`: 函数不会修改状态变量。
+* `pure`: 函数既不会修改状态变量，也不会读取状态变量。
+* `payable`: 函数可以接收以太币。
+* `returns`: 指定函数的返回类型。
+* `constructor`: 合约的构造函数，在合约部署时执行一次。
