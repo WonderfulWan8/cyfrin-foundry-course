@@ -387,3 +387,57 @@ Completed the core **"Storage & Cost"** modules in Solidity.
 ### 3. Next Steps
 * **Problem**: Arrays are useful but inefficient for looking up specific data (requires iteration/looping).
 * **Goal**: Conquer **Mappings**—Solidity's version of hash tables—to achieve **$O(1)$** lookup speed.
+
+
+# 📅 Daily Log 9: 2025-12-26 (Thu)
+
+**综合评分：** 60/100
+**关键词：** 上下文切换、C类浪费、EVM存储、身份隔离
+
+### 1. 💀 尸检与复盘 (The Autopsy)
+* **最大的败笔：** 上午陷入“上下文切换地狱” (Context Switching Hell)。为了几块钱的披萨售后和阿姨的琐事，献祭了黄金心流时间。
+* **教训：** 以后任何杂事（Dropshipping、家务）必须被隔离在 **20:00 以后**。白天是神圣的代码时间。
+
+### 2. 💡 技术顿悟 (Technical Epiphany)
+* **主题：** EVM 架构理解
+* **误区修正：** 以前以为写数据会改变合约代码本身。
+* **真相：**
+    * 合约地址 (Address) = 不变的钢筋水泥 (**Code is immutable**)。
+    * 存储槽 (Storage) = 屋里的家具 (**State is mutable**)。
+* **本质：** 每次 `addPerson` 只是发了一笔交易去修改该地址名下的 Storage Slot，而合约的 Bytecode 永远不变。
+
+### 3. 💰 财务与战略 (CFO Mode)
+* **财务系统的重构：** 建立了 **A(生存) / B(投资) / C(浪费)** 分类法。
+* **痛点：** 修车和必胜客花掉了我在澳洲 **4.3天** 的生存时间。
+* **Excel 升级：** 抛弃了“合并单元格”的手账思维，转向了“数据库思维”的流水线记账。
+
+### 4. 🛡️ 安全与身份 (Security & Identity)
+* **Telegram 大清洗：** 删除了洗钱/灰产群。
+* **身份转型：** 正在从“老司机”转型为职业的“Web3 开发者”。
+
+
+# 📅 Daily Log 9: 2025-12-26 (Thu)
+
+**Overall Score:** 60/100
+**Keywords:** Context Switching, C-Class Waste, EVM Storage, Identity Isolation
+
+### 1. 💀 The Autopsy
+* **Biggest Failure:** Fell into "Context Switching Hell" in the morning. Sacrificed golden flow state time for trivialities like a few dollars in pizza refunds and managing the cleaner.
+* **Lesson:** All menial tasks (Dropshipping, chores) must be strictly isolated to **after 20:00**. Daylight hours are sacred code time.
+
+### 2. 💡 Technical Epiphany
+* **Subject:** Understanding EVM Architecture
+* **Misconception Corrected:** Previously thought writing data changed the contract code itself.
+* **The Truth:**
+    * Contract Address = Immutable reinforced concrete structure (**Code is immutable**).
+    * Storage = The furniture inside (**State is mutable**).
+* **The Essence:** Every `addPerson` call is just a transaction modifying the Storage Slot under that address. The contract's Bytecode remains forever unchanged.
+
+### 3. 💰 Financial & Strategic (CFO Mode)
+* **System Restructuring:** Established the **A (Survival) / B (Investment) / C (Waste)** classification system.
+* **Pain Point:** Car repairs and Pizza Hut cost me **4.3 days** of my future life in Australia.
+* **Excel Upgrade:** Abandoned the "journal-style" mindset (merged cells) for a "database-oriented" pipeline approach.
+
+### 4. 🛡️ Security & Identity
+* **The Telegram Purge:** Deleted money laundering/grey market groups.
+* **Identity Shift:** Transitioning from a "Degen/Lurker" to a professional "Web3 Developer".
