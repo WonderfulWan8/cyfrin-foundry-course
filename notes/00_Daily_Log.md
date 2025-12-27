@@ -441,3 +441,65 @@ Completed the core **"Storage & Cost"** modules in Solidity.
 ### 4. 🛡️ Security & Identity
 * **The Telegram Purge:** Deleted money laundering/grey market groups.
 * **Identity Shift:** Transitioning from a "Degen/Lurker" to a professional "Web3 Developer".
+
+
+📅 Daily Log10: 2025-12-27 (周六)
+状态: 🟡 恢复模式 (生理极限测试后) 核心: ZKSync 部署流程 / Solidity 继承机制 / 职业影响力策略
+
+1. 🧠 技术深度 (Technical Deep Dive)
+A. ZKSync 的底层编译逻辑 (zkEVM Mechanics)
+今天首次在 L2 (ZKSync Sepolia) 上完成部署。意识到 ZKSync Remix 插件不仅是一个 UI，更是底层的编译开关。
+* 标准编译器 (solc): 将 Solidity 编译为 EVM Bytecode。适用于 Ethereum 主网, Optimism, Arbitrum。
+* ZKSync 编译器 (zksolc): 将 Solidity 编译为 LLVM IR。这是 ZKSync 这种 zkEVM 架构独有的底层语言。
+* 本质区别: 即使 Solidity 代码写得一模一样，底层的机器码完全不同。用标准编译器去跑 ZKSync，就像拿 Windows 的 .exe 去 Mac 上运行，根本跑不通。
+B. Solidity 继承法则 (The "Virtual" Seal)
+在编写 AddFiveStorage 继承 SimpleStorage 时遭遇编译报错：Function has override specified but does not override anything。
+* 无中生有 (Function Existence): AddFiveStorage 作为子合约，无法重写父合约中不存在的函数。基础的 store 函数必须在父类中显式存在。
+* 授权修改 (The virtual Keyword):
+    * Solidity 中父类函数默认是**“封印”**的。
+    * 父类 (SimpleStorage): 必须在函数上添加 virtual 关键字 (function store(...) public virtual)，明确表示“授权修改”。
+    * 子类 (AddFiveStorage): 才能使用 override 关键字 (function store(...) public override) 进行逻辑覆盖。
+
+2. ♟️ 职业策略 (Strategic Shifts)
+从“低效助人”转向“公开建设”
+针对 ZKSync Remix 插件在根目录下无法编译的 Bug：
+* 旧思维: 在 GitHub Discussion 里回帖，做隐形的免费客服。（ROI 极低）
+* 新思维: 拒绝做免费客服，要做公开的问题解决者 (Public Problem Solver)。
+* 执行: 将解决方案（移动文件至 /contracts 目录）整理，发推特并 @官方账号。
+* 目的: 建立“在技术前沿踩坑并解决问题”的工程师人设。影响力建立在公开分享解决方案上，而不是私下回复工单上。
+3. 📝 明日预案 (Next Steps)
+* 恢复: 今晚 22:00 前强制关机睡觉。在 HRV (心率变异性) 恢复前，暂停高强度有氧。
+* 技术: 继续推进 Foundry 课程 (Section 2: Storage Factory)。
+* 工程: 保持项目目录结构的整洁 (src/03_Solidity_Basics/...)，严格执行蛇形/数字命名法。
+
+
+📅 Daily Log 10: 2025-12-27 (Saturday)
+Status: 🟡 Recovery Mode (Post-Physiological Limit Test)
+Core: ZKSync Deployment Flow / Solidity Inheritance / Career Influence Strategy
+
+1. 🧠 Technical Deep Dive
+A. ZKSync Compilation Mechanics (zkEVM Under the Hood)
+Successfully deployed to L2 (ZKSync Sepolia) for the first time today. I realized the ZKSync Remix Plugin isn't just a UI wrapper; it's a fundamental compiler switch.
+* Standard Compiler (solc): Compiles Solidity into EVM Bytecode. Used for Ethereum Mainnet, Optimism, Arbitrum.
+* ZKSync Compiler (zksolc): Compiles Solidity into LLVM IR. This is the native low-level language specific to the ZKSync zkEVM architecture.
+* The Core Difference: Even if the Solidity code is syntactically identical, the underlying machine code is fundamentally different. Using the standard compiler for ZKSync is like trying to run a Windows .exe on a Mac—it simply won't execute.
+B. Solidity Inheritance Rules (The "Virtual" Seal)
+Encountered a compilation error when creating AddFiveStorage inheriting from SimpleStorage: Function has override specified but does not override anything.
+* Function Existence: As a child contract, AddFiveStorage cannot override a function that does not exist in the parent. The base store function must be explicitly defined in the parent contract.
+* Authorization (The virtual Keyword):
+    * In Solidity, parent functions are "sealed" by default.
+    * Parent (SimpleStorage): Must attach the virtual keyword to the function (function store(...) public virtual) to explicitly authorize modification.
+    * Child (AddFiveStorage): Can only use the override keyword (function store(...) public override) once the parent has granted this permission.
+
+2. ♟️ Strategic Shifts (Career)
+From "Inefficient Helper" to "Public Builder"
+Address the bug where the ZKSync Remix Plugin fails to compile files located in the root directory:
+* Old Mindset: Replying to threads in GitHub Discussions, acting as invisible, free tech support. (Low ROI).
+* New Mindset: Refuse to be free support; become a Public Problem Solver.
+* Execution: Documented the fix (moving files to the /contracts directory), posted it on Twitter (X), and tagged official accounts.
+* Goal: Establish the persona of an engineer who navigates the bleeding edge and solves real problems. Influence is built on publicly sharing solutions, not on answering private support tickets.
+
+3. 📝 Next Steps
+* Recovery: Forced shutdown and sleep by 22:00. Pause high-intensity cardio until HRV (Heart Rate Variability) recovers.
+* Tech: Continue advancing through the Foundry Course (Section 2: Storage Factory).
+* Engineering: Maintain a clean project directory structure (src/03_Solidity_Basics/...) and strictly enforce snake_case/numbered naming conventions.
